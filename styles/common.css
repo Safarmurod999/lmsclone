@@ -35,11 +35,34 @@
     background-color: #333 !important;
     color: white;
   }
-  
-  .dark aside {
-    border-right: 2px solid white;
+  .dark aside .aside-top #top-a span{
+    color: #fff;
   }
-  
+  .dark aside {
+    border-right: 1px solid rgba(255, 255, 255,0.5);
+  }
+  .dark #dashboard .card-item h4,.dark #dashboard .card-item p{
+    color: #fff;
+    background-color: transparent !important;
+  }
+  .dark #dashboard .card-item,.dark #dashboard .card-item .d-foot{
+    background-color: rgb(94, 92, 92) !important;
+  }
+  .dark .hamburger i{
+    color: #fff;
+  }
+  .dark nav .right *{
+    color: #fff;
+  }
+  .dark nav .right a i{
+    color: #fff;
+  }
+  .dark nav .right a:last-child i{
+    color: #fff;
+  }
+  .dark .switch input{
+    background-color: #fff !important;
+  } 
   .close,
   .close + main {
     --aside-width: 70px;

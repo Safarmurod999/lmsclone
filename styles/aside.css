@@ -10,6 +10,7 @@ aside {
   overflow-x: hidden;
   transition: var(--aside-time);
 }
+
 aside::-webkit-scrollbar {
   width: 8px;
 }
@@ -98,4 +99,48 @@ aside a:visited{
 }
 aside a:hover {
   opacity: 0.7;
+}
+.switch input {
+  position: relative;
+  appearance: none;
+  width: calc(var(--switch) * 2 + var(--switch-p));
+  height: calc(var(--switch) + var(--switch-p));
+  border-radius: calc(var(--switch) + var(--switch-p) / 2);
+  background-color: rgb(255, 255, 255);
+}
+.switch input::after {
+  content: "";
+  position: absolute;
+  top: var(--switch-p);
+  left: var(--switch-p);
+  height: calc(var(--switch) - var(--switch-p));
+  width: calc(var(--switch) - var(--switch-p));
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgb(102, 100, 100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.switch input:checked::after {
+  left: calc(var(--switch) + var(--switch-p));
+}
+.aside-bottom {
+  border-top: 2px solid rgba(255, 255, 255, 255 , 0.5);
+}
+
+.aside-bottom li:last-child {
+  padding: 10px 15px;
+}
+
+@media (max-width: 900px) {
+  .close, .close + main {
+    --aside-width: 280px;
+  }
+  aside, aside + main {
+    --aside-width: 70px;
+  }
+  #dashboard .card-item {
+    width: 100%;
+  }
 }
