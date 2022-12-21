@@ -1,0 +1,101 @@
+aside {
+  position: fixed;
+  width: var(--aside-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1d2d5b;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: var(--aside-time);
+}
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 61, 63);
+}
+aside a span {
+  transition: var(--aside-time);
+}
+
+.logo {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: normal;
+  text-transform: uppercase;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.logo span .aside-top aside ul {
+  list-style-type: none;
+}
+#student{
+margin:20px 0 0 25px ;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+aside a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 25px 10px 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 200;
+}
+aside a span {
+  margin-left: 10px;
+  color: white;
+  font-size: 14px;
+}
+.aside-bottom {
+  border-top: 2px solid black;
+}
+aside i {
+  vertical-align: middle;
+  margin-left: 15px;
+  font-size: 20px;
+  line-height: 22px;
+  width: 20px;
+  color: white;
+  padding: 10px 8px;
+  margin-right: 10px;
+}
+aside #top-a span {
+  margin-left: -1px;
+  width: 95%;
+  white-space: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 13px;
+  color: #000;
+}
+#dashboard-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+aside a:visited{
+  opacity: 0.5;
+}
+aside a:hover {
+  opacity: 0.7;
+}

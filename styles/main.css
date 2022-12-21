@@ -1,0 +1,78 @@
+@import "common.css";
+@import "normalize.css";
+@import "aside.css";
+@import "dashboard.css";
+@import "mysub.css";
+@import "media1050px.css";
+@import "media414px.css";
+
+main {
+  position: absolute;
+  left: var(--aside-width);
+  width: calc(100% - var(--aside-width));
+  height: 1000px;
+  background-color: #F1F5F8;
+  padding-top: var(--nav-height);
+  transition: var(--aside-time);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: calc(100% - var(--aside-width)); 
+  display: flex;
+  padding: 22px 25px 17px 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - var(--aside-width));
+  height: var(--nav-height);
+  background-color: #e5e5e5;
+  transition: var(--aside-time);
+}
+.hamburger i {
+  font-size: var(--h-s);
+  color: #1d2d5b;
+}
+
+section {
+  padding: var(--d-p);
+}
+select{
+  outline: none;
+  cursor: pointer;
+}
+input{
+  outline: none;
+}
+nav .right {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .right .date-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+nav .right i {
+  font-weight: 300;
+  font-size: 33px;
+  color: #1d2d5b;
+}
+nav .right a:last-child i {
+  color: #1d2d5b;
+  font-size: 40px;
+}
+nav .right p {
+  color: #1d2d5b;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+nav .right h3 {
+  color: #1d2d5b;
+  font-size: 13px;
+}
